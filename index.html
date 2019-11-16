@@ -1,120 +1,190 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Maxim codes</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-    <!-- Styles -->
-    <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Dosis', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-center {
-            position: absolute;
-            top: 18px;
-        }
-
-        .bottom-center {
-            position: absolute;
-            bottom: 20px;
-            text-align: right;
-            width: 90%;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .icons {
-            font-size: 2.5rem;
-            margin-block-end: 0;
-            margin-block-start: 0.5em;
-        }
-
-        a, .links > a, .links > .disabled {
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .links a {
-            color: #636b6f;
-        }
-
-        .links > a:hover {
-            color: #000000;
-        }
-
-        .name, .disabled, .muted {
-            color: #005cbf;
-        }
-    </style>
-    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-    <script src="js/icons.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
+    <meta name="author" content="Maxim Kerstens"/>
+    <meta name="description" content="Freelance Web developer, Laravel, NodeJS, VueJS consulting."/>
+    <meta name="keywords" content="freelancer, laravel, vuejs, antwerp, belgium, developer"/>
+    <title>HappyDemon | Maxim Kerstens</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60394ca932.js" crossorigin="anonymous"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "HappyDemon",
+			"url": "https://happydemon.dev",
+			"email": "maxim.kerstens@gmail.com",
+			"vatId": "BE0737 686 582",
+			"contactPoint": [
+				{ "@type": "ContactPoint",
+					"telephone": "+32-483-482-956",
+					"contactType": "Main line"
+				}
+			]
+		}
+	</script>
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-    <div class="links top-center">
-        <a class="disabled" href="https://www.linkedin.com/in/mkerstens/">LinkedIn</a>
-        <a href="https://medium.com/@maximkerstens">Medium</a>
-        <a href="https://github.com/happyDemon">GitHub</a>
+<header class="header">
+    <div class="header__content header__content--fluid-width">
+        <div class="header__logo-title">HappyDemon</div>
+        <nav class="header__menu">
+            <ul>
+				<li><a href="https://github.com/happyDemon"><i class="fab fa-github"></i> Github</a></li>
+				<li><a href="https://medium.com/@maximkerstens"><i class="fab fa-medium"></i> Medium</a></li>
+				<li><a href="https://www.linkedin.com/in/mkerstens/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Section -- intro -->
+<section class="section section--intro" id="intro">
+    <div class="section__content section__content--fluid-width section__content--intro">
+        <div class="intro">
+            <div class="intro__content">
+                <div class="intro__title">Hi, I'm <span>Maxim</span></div>
+                <div class="intro__subtitle">Web development freelancer, based in Antwerp, Belgium.</div>
+            </div>
+        </div>
+    </div>
+    <div class="intro-animation">
+        <div class="intro-icons">
+            <i class="fab fa-laravel" title="Laravel"></i>
+            <i class="fab fa-vuejs" title="VueJS"></i>
+            <i class="fab fa-docker" title="Docker"></i>
+			<span></span>
+        </div>
+    </div>
+    <svg class="svg-intro-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,90 L30,100 L100,20 L100,100 0,100 Z" fill="#eaeef1"/>
+    </svg>
+</section>
+
+<!-- Section features -->
+<section class="section section--features" id="features">
+
+    <div class="section__content section__content--fluid-width section__content--padding section__content--features">
+        <h2 class="section__title section__title--centered">Skills</h2>
+        <div class="section__description section__description--centered">
+        </div>
+        <div class="grid grid--3col grid--features">
+
+            <div class="grid__item grid__item--featured">
+                <h3 class="grid__title"><span>Back</span>-end</h3>
+                <p class="grid__text">
+                    In the past I have worked on back-office tools, configurator tools, IOT communication and API
+                    implementations.
+                </p>
+                <div class="grid__icon">
+                    <i class="fab fa-laravel" title="Laravel"></i>
+                    <i class="fab fa-node-js" title="NodeJS"></i>
+                </div>
+            </div>
+            <div class="grid__item">
+                <h3 class="grid__title">Front<span>-end</span></h3>
+                <p class="grid__text">I have mainly created small SPAs, as well as specifically tailored components.</p>
+                <div class="grid__icon">
+                    <i class="fab fa-js" title="Javascript"></i>
+                    <i class="fab fa-vuejs" title="VueJS"></i>
+                </div>
+            </div>
+
+            <div class="grid__item">
+                <h3 class="grid__title">Dev<span>Ops</span></h3>
+                <p class="grid__text">I'm able to setup a local development environment that's fully replicable on a
+                    staging or production server.</p>
+                <div class="grid__icon">
+                    <i class="fab fa-docker" title="Docker"></i>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="content">
-        <div class="title">
-            Hello, I'm <small class="name">Maxim</small>
-            <p class="icons">
-                <span class="iconify" data-icon="logos-laravel"></span>
-                <span class="iconify" data-icon="fa-brands:js"></span>
-                <span class="iconify" data-icon="logos-vue"></span>
-            </p>
+    <svg class="svg-features-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+         preserveAspectRatio="none">
+        <path d="M0,0 L80,100 L100,50 100,100 0,100 Z" fill="#fff"/>
+    </svg>
+</section>
 
-            <p class="icons">
-                <span class="iconify" data-icon="logos-docker-icon"></span>
-                <span class="iconify" data-icon="logos-pusher"></span>
-                <span class="iconify" data-icon="logos-azure"></span>
-            </p>
+
+<!-- Section -->
+<section class="section" id="clients">
+
+    <h2 class="section__title section__title--centered">Clients</h2>
+    <div class="section__content section__content--fluid-width section__content--padding">
+        <div class="grid grid--3col">
+
+            <div class="grid__item">
+                <div class="grid__client-logo">
+                    <a href="https://www.pandafish.be/">
+                        <img
+                                src="https://www.pandafish.be/wp-content/themes/pandafish-site/img/logo_header.png"
+                                title="Pandafish"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__client-logo">
+                    <a href="https://www.bagaar.be/">
+                        <img
+                                src="https://www.bagaar.be/hubfs/logo-bagaar-black.svg"
+                                title="Bagaar"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__client-logo">
+                    <a href="https://www.bridgestone.eu/">
+                        <img
+                                src="https://www.bridgestone.com/etc/images/logos/bridgestone-logo-set-en.svgz"
+                                title="Bridgestone"
+                        />
+                    </a>
+                </div>
+            </div>
         </div>
 
     </div>
-    <div class="bottom-center">
-        <a class="muted" href="mailto:maxim.kerstens@gmail.com">Contact</a> <span>VAT: BE0737.686.582</span>
+</section>
+
+<!-- Section -->
+<section class="section section--cta" id="cta">
+    <div class="section__content section__content--fluid-width section__content--padding section__content--cta"
+         style="padding-bottom: 0;">
     </div>
-</div>
+    <div class="grid grid--4col grid--about">
+        <div class="grid__item grid__item--x2">
+            <h5 class="grid__title grid__title--footer-logo">HappyDemon</h5>
+            <p class="grid__text grid__text--copyright">
+				<a href="mailto:maxim.kerstens@gmail.com">maxim.kerstens@gmail.com</a> <br />
+				VAT: BE0737 686 582
+                <br/>
+			</p>
+            <ul class="grid__list grid__list--sicons">
+                <li><a href="https://github.com/happyDemon" title="Github"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://medium.com/@maximkerstens" title="Medium"><i class="fab fa-medium"></i></li>
+                <li><a href="https://www.linkedin.com/in/mkerstens/" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+
+        </div>
+    </div>
+    <svg class="svg-cta-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,100 L20,0 L100,20 100,0 0,0 Z" fill="#fff"/>
+    </svg>
+</section>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.custom.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>
