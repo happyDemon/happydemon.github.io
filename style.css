@@ -181,6 +181,8 @@ h6 {
 
 .header__logo-title {
     color: #000;
+    font-weight: 300;
+    padding: 0;
     font-size: 26px;
     letter-spacing: -1px;
     position: relative;
