@@ -886,7 +886,7 @@ h6 {
 /*===============================================*/
 .section--intro {
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color: #fff;
     position: relative;
     overflow: hidden;
