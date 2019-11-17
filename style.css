@@ -3418,6 +3418,19 @@ ul.grid__list--fmenu li a:hover {
         line-height: 24px;
         padding: 0 5% 20px 5%;
     }
+
+    .intro-animation .fa-vuejs {
+        left: 27%;
+        top: 23%;
+    }
+
+    .intro-animation .fa-docker {
+        font-size: 4rem;
+    }
+    .intro-animation .fa-laravel {
+        left: 38%;
+        font-size: 4rem;
+    }
 }
 
 /*===============================================*/
@@ -3493,6 +3506,10 @@ ul.grid__list--fmenu li a:hover {
         font-size: 12px;
         padding: 0;
     }
+
+
+
+
 }
 
 /*===============================================*/
@@ -3528,6 +3545,24 @@ ul.grid__list--fmenu li a:hover {
     #features .grid--features {
         padding-left: 0;
     }
+
+
+    .intro-animation .fa-vuejs {
+        left: 0;
+        top: 15%;
+    }
+
+    .intro-animation .fa-docker {
+        left: 70%;
+        top: 53%;
+        font-size: 4rem;
+    }
+    .intro-animation .fa-laravel {
+        font-size: 3.75rem;
+        left: 20%;
+        top: 62%;
+        transform: translateX(-50%) translateY(-50%) rotate(35deg);
+    }
 }
 
 /*===============================================*/
@@ -3549,5 +3584,10 @@ ul.grid__list--fmenu li a:hover {
         padding: 0 2% 5px 2%;
         line-height: 18px;
     }
+
+}
+
+
+@media screen and (max-width: 650px) {
 
 }
