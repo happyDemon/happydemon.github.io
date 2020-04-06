@@ -1,1 +1,237 @@
-!function(e){var n={};function t(o){if(n[o])return n[o].exports;var s=n[o]={i:o,l:!1,exports:{}};return e[o].call(s.exports,s,s.exports,t),s.l=!0,s.exports}t.m=e,t.c=n,t.d=function(e,n,o){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:o})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(t.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var s in e)t.d(o,s,function(n){return e[n]}.bind(null,s));return o},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="/",t(t.s=4)}({4:function(e,n,t){e.exports=t(5)},5:function(e,n){$(document).ready((function(){"use strict";function e(){$(window).scrollTop()>$("body").offset().top?($(".header").addClass("header--sticky"),$(".header__menu ul ul").addClass("submenu-header-sticky")):($(".header").removeClass("header--sticky"),$(".header__menu ul ul").removeClass("submenu-header-sticky"))}$(window).scroll((function(){e()})),e(),$(document).on("scroll",o);var n,t;function o(e){var n=$(document).scrollTop();$(".header__menu ul li a").each((function(){var e=$(this),t=$(e.attr("href"));t.position().top<=n&&t.position().top+t.height()>n?($(".header__menu ul li a").removeClass("selected"),e.addClass("active")):e.removeClass("active")}))}document.querySelector(".header__menu").addEventListener("click",(n=function(e){return e.classList&&e.classList.contains("header-link")},t=function(e){var n=e.delegateTarget;if(n.classList.contains("active"))n.classList.remove("active");else{n.classList.add("active");var t=n.hash,s=$(t);$("html, body").stop().animate({scrollTop:s.offset().top},600,"swing",(function(){window.location.hash=t,$(document).on("scroll",o)}))}},function(e){var o=e.target;do{if(n(o))return e.delegateTarget=o,void t.apply(this,arguments)}while(o=o.parentNode)})),$.fn.menumaker=function(e){var n=$(this),t=$.extend({title:"Menu",format:"dropdown",sticky:!1},e);return this.each((function(){n.prepend('<div class="menu-button"></div>'),$(this).find(".menu-button").on("click",(function(){$(this).parent().parent().parent().toggleClass("menu-open");var e=$(this).next("ul");e.toggleClass("open"),e.hasClass("open")?e.show():e.hide(),$('.header__menu ul a[href^="#"]').on("click",(function(e){$(".header__menu ul").removeClass("open"),$(".header__menu ul").hide(),$(".header").removeClass("menu-open")}))}));"multitoggle"===t.format?(n.find(".menu-item-has-children").prepend('<span class="submenu-button"></span>'),n.find(".submenu-button").on("click",(function(){$(this).toggleClass("submenu-opened"),$(this).siblings("ul").hasClass("open")?$(this).siblings("ul").removeClass("open").hide():$(this).siblings("ul").addClass("open").show()}))):n.addClass("dropdown"),!0===t.sticky&&n.addClass("sticky")}))},$(".header__menu").menumaker({format:"multitoggle",sticky:!0})}))}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./resources/js/menu.js":
+/*!******************************!*\
+  !*** ./resources/js/menu.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  "use strict";
+
+  function navScroll() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('body').offset().top;
+
+    if (window_top > div_top) {
+      $('.header').addClass('header--sticky');
+      $('.header__menu ul ul').addClass('submenu-header-sticky');
+    } else {
+      $('.header').removeClass('header--sticky');
+      $('.header__menu ul ul').removeClass('submenu-header-sticky');
+    }
+  }
+
+  $(window).scroll(function () {
+    navScroll();
+  });
+  navScroll();
+  $(document).on("scroll", onScroll);
+
+  var delegate = function delegate(criteria, listener) {
+    return function (e) {
+      var el = e.target;
+
+      do {
+        if (!criteria(el)) continue;
+        e.delegateTarget = el;
+        listener.apply(this, arguments);
+        return;
+      } while (el = el.parentNode);
+    };
+  };
+
+  var toolbar = document.querySelector(".header__menu");
+
+  var buttonsFilter = function buttonsFilter(elem) {
+    return elem.classList && elem.classList.contains("header-link");
+  };
+
+  var buttonHandler = function buttonHandler(e) {
+    var button = e.delegateTarget;
+
+    if (!button.classList.contains("active")) {
+      button.classList.add("active");
+      var target = button.hash;
+      var $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 600, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+      });
+    } else {
+      button.classList.remove("active");
+    }
+  };
+
+  toolbar.addEventListener("click", delegate(buttonsFilter, buttonHandler));
+
+  function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('.header__menu ul li a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('.header__menu ul li a').removeClass("selected");
+        currLink.addClass("active");
+      } else {
+        currLink.removeClass("active");
+      }
+    });
+  }
+
+  $.fn.menumaker = function (options) {
+    var cssmenu = $(this),
+        settings = $.extend({
+      title: "Menu",
+      format: "dropdown",
+      sticky: false
+    }, options);
+    return this.each(function () {
+      cssmenu.prepend('<div class="menu-button"></div>');
+      $(this).find(".menu-button").on('click', function () {
+        $(this).parent().parent().parent().toggleClass('menu-open');
+        var mainmenu = $(this).next('ul');
+        mainmenu.toggleClass('open');
+
+        if (mainmenu.hasClass('open')) {
+          mainmenu.show();
+        } else {
+          mainmenu.hide();
+        }
+
+        $('.header__menu ul a[href^="#"]').on('click', function (e) {
+          $('.header__menu ul').removeClass('open');
+          $('.header__menu ul').hide();
+          $('.header').removeClass('menu-open');
+        });
+      });
+
+      var multiTg = function multiTg() {
+        cssmenu.find(".menu-item-has-children").prepend('<span class="submenu-button"></span>');
+        cssmenu.find('.submenu-button').on('click', function () {
+          $(this).toggleClass('submenu-opened');
+
+          if ($(this).siblings('ul').hasClass('open')) {
+            $(this).siblings('ul').removeClass('open').hide();
+          } else {
+            $(this).siblings('ul').addClass('open').show();
+          }
+        });
+      };
+
+      if (settings.format === 'multitoggle') multiTg();else cssmenu.addClass('dropdown');
+      if (settings.sticky === true) cssmenu.addClass('sticky');
+    });
+  };
+
+  $(".header__menu").menumaker({
+    format: "multitoggle",
+    sticky: true
+  });
+});
+
+/***/ }),
+
+/***/ 2:
+/*!************************************!*\
+  !*** multi ./resources/js/menu.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! /Users/maxim/Desktop/projects/personal/happydemon.github.io/packages/HappyDemon/Github/resources/js/menu.js */"./resources/js/menu.js");
+
+
+/***/ })
+
+/******/ });
